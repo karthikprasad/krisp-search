@@ -1,0 +1,32 @@
+{% if results %}
+  {% for item in results %}
+      <div class="resultitem col-md-6 col-md-offset-1">
+        <div class="resulttitle">
+          <a href="{{item.link}}">{{item.title}}</a>
+        </div>
+        <div class="resullink">
+          <a href="{{item.link}}">{{item.link}}</a>
+        </div>
+        <div class="resultdesc">
+          {{item.desc|safe}}
+        </div>
+        {% if item.missing %}
+        <div class="resultmissing"v>
+          Missing: <s>{{item.missing}}</s>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+{% else %}
+  <div class="resultitem col-md-6 col-md-offset-1">
+    <p style="padding-top:.33em"> Your search - <em> {{query}}</em> - did not match any documents.</p>
+    <p style="margin-top:1em">Suggestions:</p>
+    <ul style="margin-left:1.3em;margin-bottom:2em">
+      <li>Make sure all words are spelled correctly.</li>
+      <li>Try different keywords.</li>
+      <li>Try more general keywords.</li>
+      <li>Try fewer keywords.</li>
+    </ul>
+  </div>
+{% endif %}

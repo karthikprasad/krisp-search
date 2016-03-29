@@ -1,0 +1,123 @@
+OLD DCG
+=======
+student affairs
+================
+www.ics.uci.edu/ugrad/qa 1
+www.ics.uci.edu/ugrad/index 1
+www.ics.uci.edu/ugrad 3
+www.ics.uci.edu/grad 1
+www.ics.uci.edu/grad/index 1
+
+
+grad courses
+============
+• www.ics.uci.edu/ugrad/qa 1 
+• www.ics.uci.edu/grad/policies/GradPolicies_TransferCredit.php 1
+• www.ics.uci.edu/ugrad/degrees/degree_ics.php 1 
+• grape.ics.uci.edu/wiki/public/wiki/cs222-2015-fall 1 
+• grape.ics.uci.edu/wiki/public/wiki/cs222-2015-fall?version=61 1
+
+Cristina Lopes
+===============
+• www.ics.uci.edu/community/news/features/view_feature?id=67
+• www.ics.uci.edu/community/news/notes/notes_2014.php
+• www.ics.uci.edu/community/news/features/view_feature?id=89
+• www.ics.uci.edu/community/news/notes/notes_2013.php
+• www.ics.uci.edu/community/news/notes/notes_2011.php
+
+
+REST
+=====
+• www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm 3
+• www.ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm 1
+• www.ics.uci.edu/~kay/courses/i41/answers.html 1
+• www.ics.uci.edu/~fielding/pubs/dissertation/conclusions.htm 3
+• www.ics.uci.edu/~fielding/pubs/dissertation/top.htm 3
+
+
+computer games
+===============
+• www.ics.uci.edu/~wscacchi/GameIndustry/Lecture01-GameTechTrends.html 1
+• www.ics.uci.edu/~wscacchi 1
+• www.ics.uci.edu/~wscacchi/GameIndustry 1
+• www.ics.uci.edu/~magda/cs620/announceOG.html 1
+• www.ics.uci.edu/~eppstein/cgt/hard.html 1
+
+
+information retrieval
+=======================
+• www-db.ics.uci.edu/pages/research/mars  1
+• www.ics.uci.edu/~pazzani/RTF/AAAI.html 1
+• www.ics.uci.edu/~pazzani/Syskill.html 1
+• www.ics.uci.edu/~lopes/teaching/cs221W12 3
+• www.ics.uci.edu/~lopes/teaching/cs221W15 3
+
+
+NEW DCG
+========
+[u'student' u'affairs']
+http://www.ics.uci.edu/prospective/en/contact/student-affairs 3
+http://www.ics.uci.edu/about/search/search_sao.php 3
+http://www.ics.uci.edu/grad/index 1
+http://www.ics.uci.edu/grad 3
+http://www.ics.uci.edu/ugrad/qa 2
+
+[u'graduate' u'courses']
+http://www.ics.uci.edu/grad/courses 3
+http://www.ics.uci.edu/grad/courses/index 1
+http://www.ics.uci.edu/grad/courses?department=STATS&quarter=none 1
+http://www.ics.uci.edu/grad/courses/listing.php 1
+http://www.ics.uci.edu/grad/policies/GradPolicies_Grading.php 1
+
+[u'Crista' u'Lopes']
+http://www.ics.uci.edu/~lopes 3
+http://cgvw.ics.uci.edu/lopes-speaks-at-intel-cto-keynote-address 1
+http://www.ics.uci.edu/faculty/profiles/view_faculty.php?ucinetid=lopes 3
+http://www.ics.uci.edu/community/news/notes/notes_2007.php 1
+http://www.ics.uci.edu/community/news/features/view_feature?id=67 2
+
+
+[u'REST']
+http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm 3
+http://www.ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm 2
+http://www.ics.uci.edu/~kay/courses/i41/answers.html 2
+http://www.ics.uci.edu/~fielding/pubs/dissertation/conclusions.htm 2
+http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm 3
+
+
+[u'computer games']
+http://cgvw.ics.uci.edu 3 
+http://www.ics.uci.edu/prospective/en/degrees/computer-game-science 3
+http://cgvw.ics.uci.edu/hello-world 1 
+http://cgvw.ics.uci.edu/studying-computer-games-is-no-waste 1
+http://www.ics.uci.edu/~eppstein/cgt/hard.html 1
+
+
+[u'information retrieval']
+http://fano.ics.uci.edu/cites/Document/Incremental-clustering-and-dynamic-information-retrieval.html 1
+http://www.ics.uci.edu/~lopes/teaching/cs221W12 3
+http://www.ics.uci.edu/~lopes/teaching/cs221W13 3
+http://www.ics.uci.edu/~lopes/teaching/cs221W14 1
+http://www.ics.uci.edu/~lopes/teaching/cs221W15 3
+
+
+idcg = sum([(2**rel -1)/math.log(i+2) for i,rel in enumerate([3,3,3,2,2])])
+sa = [1,1,3,1,1]  8.582/25.058   0.342
+gc = [1,1,1,1,1]  4.254/25.058   0.169
+cl = [1,1,1,1,1]  4.254/25.058   0.169
+r = [3,1,1,3,3]   19.986/25.058  0.797
+cg = [1,1,1,1,1]  4.254/25.058   0.169
+ir = [1,1,1,3,3]  11.330/25.058  0.452
+
+nsa = [3,3,1,3,2]  23.216/25.058  0.926
+ngc = [3,1,1,1,1]  12.910/25.058  0.515
+ncl = [3,1,3,1,2]  18.354/25.058  0.732
+nr = [3,2,2,2,3]   20.764/25.058  0.829
+ncg = [3,3,1,1,1]  18.371/25.058  0.733
+nir = [1,3,3,1,3]  17.392/25.058  0.694
+
+
+sum([(2**rel -1)/math.log(i+2) for i,rel in enumerate(sa)])
+
+
+
